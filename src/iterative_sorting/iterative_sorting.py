@@ -19,15 +19,15 @@ print(selection_sort([2,4,3,5,6,7,1,1,2,4,9,8]))
 
 # TO-DO:  implement the Bubble Sort function below
 def bubble_sort(arr):
-    sorted = False
+    sorted = False  # variable to use to break out of the while loop
 
     while not sorted:
-        sorted = True
+        sorted = True    # when sorted, break the loop
 
         for i in range(0, len(arr)- 1):
-            if arr[i] > arr[i + 1]:
+            if arr[i] > arr[i + 1]:       # if prev is greater than next
                 sorted = False
-                arr[i], arr[i + 1] = arr[i + 1] , arr[i]
+                arr[i], arr[i + 1] = arr[i + 1] , arr[i]   # switch order
 
     return arr
 
